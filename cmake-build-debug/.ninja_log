@@ -1,9 +1,0 @@
-# ninja log v6
-10	474	7749985613551875	build.ninja	9cbfc4c42d98691
-22	392	7749969456099417	CMakeFiles/Solar_sistem.dir/main.cpp.obj	6d44ecab7f84d7fa
-13	294	7749970503943190	Solar_sistem.exe	f413fef5c96a0509
-15	2960	7749968773280695	CMakeFiles/Solar_sistem.dir/include/glad/glad.c.obj	5705bfaea0bdd79c
-5	455	7749985613551875	build.ninja	9cbfc4c42d98691
-6	1275	7749985614496380	CMakeFiles/SolarMax.dir/main.cpp.obj	54fcd27e66100dc1
-15	2057	7749985614586372	CMakeFiles/SolarMax.dir/include/glad/glad.c.obj	6750268aacefbc75
-2063	2383	7749985635066526	SolarMax.exe	2e1a08e9b36db151
