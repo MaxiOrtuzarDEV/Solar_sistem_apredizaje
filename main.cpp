@@ -2,41 +2,51 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
+float heigthScreen = 600.0f;
+float widthScreen = 800.0f;
+
+GLFWwindow* startGlfw();
+void cargandoOpengl(GLFWwindow* window);
+
 int main() {
-    if (!glfwInit()) {
-        std::cerr << "Error: No se pudo inicializar GLFW" << std::endl;
-        return -1;
+    GLFWwindow* window = startGlfw();
+
+    while (!glfwWindowShouldClose(window)) {
+
+
+
+        glfwPollEvents();
     }
+
+    glfwDestroyWindow(window);
+    glfwTerminate();
+    return 0;
+}
+
+GLFWwindow* startGlfw() {
+    if (!glfwInit()) {
+        std::cout << "Failed to initialize GLFW" << std::endl;
+        return nullptr;
+    }
+    GLFWwindow* window = glfwCreateWindow(static_cast<int>(widthScreen), static_cast<int>(heigthScreen), "Hello World", nullptr, nullptr);
+
+    cargandoOpengl(window);
+
+
+    return window;
+}
+
+void cargandoOpengl(GLFWwindow* window) {
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* ventana = glfwCreateWindow(800, 600, "Solar Sistem", nullptr, nullptr);
-    if (!ventana) {
-        std::cerr << "Error: No se pudo crear la ventana" << std::endl;
-        glfwTerminate();
-        return -1;
-    }
-
-    glfwMakeContextCurrent(ventana);
-
+    glfwMakeContextCurrent(window);
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        std::cerr << "Error: No se pudo inicializar GLAD" << std::endl;
-        return -1;
+        std::cerr << "Failed to initialize GLAD" << std::endl;
+        return;
     }
+    glViewport(0, 0, static_cast<int>(widthScreen), static_cast<int>(heigthScreen));
 
-    glViewport(0, 0, 800, 600);
-
-    while (!glfwWindowShouldClose(ventana)) {
-        glClearColor(0.1f, 0.1f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        glfwSwapBuffers(ventana);
-        glfwPollEvents();
-    }
-
-    glfwDestroyWindow(ventana);
-    glfwTerminate();
-    return 0;
 }

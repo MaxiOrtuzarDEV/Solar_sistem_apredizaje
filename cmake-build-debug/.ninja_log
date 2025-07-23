@@ -1,0 +1,19 @@
+# ninja log v6
+10	474	7749985613551875	build.ninja	9cbfc4c42d98691
+22	392	7749969456099417	CMakeFiles/Solar_sistem.dir/main.cpp.obj	6d44ecab7f84d7fa
+13	294	7749970503943190	Solar_sistem.exe	f413fef5c96a0509
+15	2960	7749968773280695	CMakeFiles/Solar_sistem.dir/include/glad/glad.c.obj	5705bfaea0bdd79c
+5	455	7749985613551875	build.ninja	9cbfc4c42d98691
+6	1275	7749985614496380	CMakeFiles/SolarMax.dir/main.cpp.obj	54fcd27e66100dc1
+15	2057	7749985614586372	CMakeFiles/SolarMax.dir/include/glad/glad.c.obj	6750268aacefbc75
+2063	2383	7749985635066526	SolarMax.exe	2e1a08e9b36db151
+36	1462	7750080333475571	CMakeFiles/SolarMax.dir/main.cpp.obj	54fcd27e66100dc1
+1464	1796	7750080347740373	SolarMax.exe	2e1a08e9b36db151
+18	1142	7750083380784453	CMakeFiles/SolarMax.dir/main.cpp.obj	54fcd27e66100dc1
+1144	1517	7750083392044380	SolarMax.exe	2e1a08e9b36db151
+24	1129	7750091515839595	CMakeFiles/SolarMax.dir/main.cpp.obj	54fcd27e66100dc1
+1131	1451	7750091526899568	SolarMax.exe	2e1a08e9b36db151
+25	1212	7750096155522574	CMakeFiles/SolarMax.dir/main.cpp.obj	54fcd27e66100dc1
+1213	1568	7750096167395869	SolarMax.exe	2e1a08e9b36db151
+18	1042	7750098723406313	CMakeFiles/SolarMax.dir/main.cpp.obj	54fcd27e66100dc1
+1043	1364	7750098733656377	SolarMax.exe	2e1a08e9b36db151
