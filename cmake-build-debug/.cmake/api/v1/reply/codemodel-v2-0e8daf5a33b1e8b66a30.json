@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.29"
+						"string" : "3.20"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Solar_sistem::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Solar_sistem-Debug-1d60ddfe1274e91f1b39.json",
-					"name" : "Solar_sistem",
+					"id" : "SolarMax::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SolarMax-Debug-abd31b2632287207c8b5.json",
+					"name" : "SolarMax",
 					"projectIndex" : 0
 				}
 			]
