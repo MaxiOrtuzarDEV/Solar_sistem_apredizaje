@@ -1,6 +1,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include "Objeto.h"
+#include "src/shader/Shader.h"
+#include <cmath>
 #include <iostream>
 #include <cmath>
 
@@ -12,25 +14,6 @@ GLFWwindow* startGlfw();
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compileShader();
 std::vector<float> generaCIRCLE(float radius, int segments);
-
-const char* vertexShaderSource = R"glsl(
-    #version 330 core
-    layout (location = 0) in vec3 aPos;
-
-    void main() {
-        gl_Position = vec4(aPos, 1.0);
-    }
-)glsl";
-
-const char* fragmentShaderSource = R"glsl(
-    #version 330 core
-    out vec4 FragColor;
-
-    void main() {
-        FragColor = vec4(1.0, 0.0, 0.0, 0.0); // color naranja
-    }
-)glsl";
-
 
 
 std::vector<float> triaguloVertex= {
@@ -55,9 +38,9 @@ int main() {
         glClearColor(0.0f, 0.10f, 0.19f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-
-        triangulo.dibujar();
+        //triangulo.dibujar();
         circulo.dibujar();
+        circulo.updateBlueComponentColor((std::sin(static_cast<float>(glfwGetTime())) / 2.0f) + 0.5f);
 
         glfwSwapBuffers(window);
         glfwPollEvents();

@@ -19,6 +19,7 @@ add_executable(
         main.cpp
         ${SRC_FILES}
         include/glad/glad.c
+        src/shader/Shader.h
 )
 
 target_link_libraries(
