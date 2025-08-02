@@ -60,7 +60,9 @@ void Objeto::setModelMatrix(const glm::mat4& model) const {
 }
 
 void Objeto::setTexture(const char* texture_path) {
+    glUseProgram(shaderProgram);
     glGenTextures(1, &texture.textureID);
+    glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture.textureID);
 
     // Parámetros de textura
