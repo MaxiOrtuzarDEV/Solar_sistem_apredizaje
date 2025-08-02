@@ -70,6 +70,13 @@ build CMakeFiles/SolarMax.dir/include/glad/glad.c.obj: C_COMPILER__SolarMax_unsc
   OBJECT_DIR = CMakeFiles\SolarMax.dir
   OBJECT_FILE_DIR = CMakeFiles\SolarMax.dir\include\glad
 
+build CMakeFiles/SolarMax.dir/include/stb_image/stb.cpp.obj: CXX_COMPILER__SolarMax_unscanned_Debug C$:/Users/Usuario/Desktop/Progra_project/Solar_sistem/include/stb_image/stb.cpp || cmake_object_order_depends_target_SolarMax
+  DEP_FILE = CMakeFiles\SolarMax.dir\include\stb_image\stb.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Usuario/Desktop/Progra_project/Solar_sistem/include -IC:/Users/Usuario/Desktop/Progra_project/Solar_sistem/include/glad
+  OBJECT_DIR = CMakeFiles\SolarMax.dir
+  OBJECT_FILE_DIR = CMakeFiles\SolarMax.dir\include\stb_image
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SolarMax
@@ -78,7 +85,7 @@ build CMakeFiles/SolarMax.dir/include/glad/glad.c.obj: C_COMPILER__SolarMax_unsc
 #############################################
 # Link the executable SolarMax.exe
 
-build SolarMax.exe: CXX_EXECUTABLE_LINKER__SolarMax_Debug CMakeFiles/SolarMax.dir/main.cpp.obj CMakeFiles/SolarMax.dir/src/Objeto.cpp.obj CMakeFiles/SolarMax.dir/include/glad/glad.c.obj
+build SolarMax.exe: CXX_EXECUTABLE_LINKER__SolarMax_Debug CMakeFiles/SolarMax.dir/main.cpp.obj CMakeFiles/SolarMax.dir/src/Objeto.cpp.obj CMakeFiles/SolarMax.dir/include/glad/glad.c.obj CMakeFiles/SolarMax.dir/include/stb_image/stb.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lglfw3  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SolarMax.dir

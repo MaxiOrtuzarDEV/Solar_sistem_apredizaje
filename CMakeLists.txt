@@ -20,6 +20,8 @@ add_executable(
         ${SRC_FILES}
         include/glad/glad.c
         src/shader/Shader.h
+        include/stb_image/stb_image.h
+        include/stb_image/stb.cpp
 )
 
 target_link_libraries(
